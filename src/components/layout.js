@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./Footer"
-import "./layout.scss"
+import "./layout.css"
 
 import "circular-std"
 import "typeface-fira-sans"

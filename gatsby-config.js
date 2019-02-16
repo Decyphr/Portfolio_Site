@@ -26,12 +26,6 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require("sass"),
-      },
-    },
     `gatsby-plugin-styled-components`,
     `@wapps/gatsby-plugin-material-ui`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
