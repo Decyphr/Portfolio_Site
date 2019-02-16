@@ -24,7 +24,8 @@ class ContactForm extends Component {
   render() {
 
     return (
-      <FormContainer autoComplete="off" name="contact" method="POST" data-netlify="true">
+      <FormContainer autoComplete="off" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <input name="bot-filed" style={{ visibility: 'hidden' }}/>
         <TextInput
           name="name"
           onChange={this.handleChange}
@@ -36,7 +37,7 @@ class ContactForm extends Component {
           name="email"
           onChange={this.handleChange}
           placeholder="Email"
-          type="text"
+          type="email"
           required
         />
         <TextBox
