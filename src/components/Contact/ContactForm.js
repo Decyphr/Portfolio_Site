@@ -24,7 +24,7 @@ class ContactForm extends Component {
   render() {
 
     return (
-      <FormContainer autoComplete="off">
+      <FormContainer autoComplete="off" name="contact" method="POST" data-netlify="true">
         <TextInput
           name="name"
           onChange={this.handleChange}
